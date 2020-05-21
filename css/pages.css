@@ -43,7 +43,7 @@
   grid-column-end: 4;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  background-color: steelblue;
+  background-color:	#3c5178;
 }
 
 @media screen and (max-width: 60em) {
@@ -80,7 +80,7 @@
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 4;
-  background-color: steelblue;
+  background-color:	#3c5178;
 }
 
 body {

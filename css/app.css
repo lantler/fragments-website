@@ -17,7 +17,7 @@
 .expand-search {
   width: 80%;
   max-width: calc(80% - 3rem);
-  border: 1px solid #c9c9c9;
+  border: 1px solid	#3c5178;
   padding: .5rem;
 }
 
@@ -28,7 +28,7 @@ svg {
 
 .button {
   font-weight: lighter;
-  background-color: #204080;
+  background-color: #3c5178;
 }
 
 /* NOTE: HERO */
