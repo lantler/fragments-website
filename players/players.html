@@ -4,55 +4,53 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players</title>
+    <title>Spell Effects</title>
     <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="../css/overview.css">
+    <link rel="stylesheet" href="../css/allpages.css">
+    <link rel="stylesheet" href="../css/allpages.css">
     <link rel="stylesheet" href="https://use.typekit.net/agr6hpy.css">
   </head>
- <body>
-<div class="holy-grail-grid">
+  <body>
 
 <!-- NOTE: TOP BAR -->
-
 <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
-
+  <!-- NOTE: vertical menu -->
   <ul class="vertical menu" data-accordion-menu>
-    <li><a href="#">SERVICES</a>
-      <ul class="menu vertical nested">
-        <li><a href="#">Brand</a></li>
-        <li><a href="#">Web Apps</a></li>
-        <li><a href="#">Mobile Apps</a></li>
+    <li><a href="#">Players</a>
+      <ul class="menu vertical nested" style="font-weight: 300">
+        <li><a href="#">Character Creation</a></li>
+        <li><a href="#">Feats</a></li>
+        <li><a href="#">Gear</a></li>
+        <li><a href="#">Objects</a></li>
+        <li><a href="#">Skill Feats</a></li>
+        <li><a href="#">Spell Effects</a></li>
        </ul>
     </li>
-    <li><a href="#">PRODUCTS</a>
-      <ul class="menu vertical nested">
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 2</a></li>
-        <li><a href="#">Product 3</a></li>
+    <li><a href="#">Gamemasters</a>
+      <ul class="menu vertical nested"style="font-weight: 300">
+        <li><a href="#">Balancing Encounters</a></li>
+        <li><a href="#">Beast Creation</a></li>
+        <li><a href="#">Beastiary</a></li>
+        <li><a href="#">Factions</a></li>
+        <li><a href="#">Running a Campaign</a></li>
        </ul>
      </li>
-    <li><a href="#">CITIES</a>
-      <ul class="menu vertical nested">
-        <li><a href="#">London</a></li>
-        <li><a href="#">New York</a></li>
-        <li><a href="#">Paris</a></li>
+    <li><a href="#">Rules</a>
+      <ul class="menu vertical nested" style="font-weight: 300">
+        <li><a href="#">General</a></li>
+        <li><a href="#">Combat</a></li>
+        <li><a href="#">Incapacitation</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Spells</a></li>
+        <li><a href="#">Vehicles</a></li>
        </ul>
     </li>
    </ul>
   <ul class="vertical menu">
-    <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">Register</a></li>
-    <li><a href="#">Pricing</a></li>
-    <li><a href="#">Support</a></li>
+    <li><a href="#">Merch</a></li>
+    <li><a href="#">Contact Us</a></li>
   </ul>
-  <ul class="vertical menu">
-     <li><a href="#">Journal</a></li>
-     <li><a href="#">FAQ</a></li>
-     <li><a href="#">Terms & Conditions</a></li>
-     <li><a href="#">Careers</a></li>
-     <li><a href="#">Students</a></li>
-   </ul>
+
   <ul class="menu simple social-links">
     <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
     <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -61,16 +59,27 @@
   </ul>
 </div>
 
+<!-- NOTE: bar content -->
+
 <div class="off-canvas-content" data-off-canvas-content>
   <div class="nav-bar">
       <div class="nav-bar-left">
-        <a class="nav-bar-logo"><img class="logo" src=../fragmentsseal.png width="80px" height="80px"></a>
+        <a href="../index.html"class="nav-bar-logo"><img class="logo" src=../fragmentsseal.png width="40px" height="40px"></a>
       </div>
+
+  <!-- NOTE: nav bar right -->
+
       <div class="nav-bar-right">
         <ul class="menu">
           <li class="hide-for-small-only"><a href="#">Gamemasters</a></li>
           <li class="hide-for-small-only"><a href="#">Rules</a></li>
-          <li>
+<!-- NOTE: search -->
+
+        <ul class="menu search">
+          <li><input type="search" placeholder=""></li>
+          <li><button type="button" class="button" style="background-color: #3c5178;">Search</button></li>
+        </ul>
+<!-- NOTE: end search -->
           <li>
             <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
               <div class="hamburger">
@@ -82,16 +91,19 @@
           </li>
         </ul>
     </div>
+
   </div>
  </div>
 
-<!-- NOTE: Middle -->
+ <!-- NOTE: bar content -->
 
-      <div class="holy-grail-middle">
+<!-- NOTE: HEADER -->
+  <div class="holy-grail-grid">
+
+      <div class="holy-grail-middle" style="width: 70vw; margin-left: 10vw">
         <h3>Players</h3>
           <p>This section contains character creation resources for players.</p>
           <ul>
-            <li><a href="overview/index.html">Overview</a></li>
             <li><a href="charactercreation/index.html">Character Creation</a></li>
             <li><a href="feats/index.html">Feats</a></li>
             <li><a href="gear/index.html">Gear</a></li>
@@ -99,15 +111,16 @@
             <li><a href="skillfeats/index.html">Skill Feats</a></li>
             <li><a href="spelleffects/index.html">Spell Effects</a></li>
           </ul>
+          <p>blind, blind fighting</p>
       </div>
-
-    </div>
+  </div>
 
 <!-- NOTE: FOOTER -->
-<footer></footer>
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
     <script src="../js/vendor/foundation.js"></script>
     <script src="../js/app.js"></script>
+
+
   </body>
 </html>

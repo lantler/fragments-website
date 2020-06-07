@@ -17,4 +17,22 @@ $(function() {
         $(".search-field").focus();
       }
     })
+
+
+// NOTE: keyword replacements
+
+    (function($) {
+      var players = $("body");
+      players.html(players.html().replace(/blind fighting/ig, '1234'));
+    })
+
+    (function($) {
+      var players = $("body");
+      players.html(players.html().replace(/blind/ig, '<a href="http://jquery.com">blind</a>'));
+    })
+
+    (function($) {
+      var players = $("body");
+      players.html(players.html().replace(/1234/ig, '<a href="http://1234.com">blind fighting</a>'));
+    })
 });
