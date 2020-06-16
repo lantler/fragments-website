@@ -6,61 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factions</title>
     <link rel="stylesheet" href="../../css/foundation.css">
-    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="../../css/allpages.css">
     <link rel="stylesheet" href="https://use.typekit.net/agr6hpy.css">
   </head>
   <body>
-    <div class="holy-grail-grid">
-      <div class="holy-grail-header">
 
 <!-- NOTE: TOP BAR -->
-<div class="top-bar-container" data-sticky-container>
-  <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Fragments of Power</li>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../../players/players.html">Players</a></li>
-          <li><a href="../../gamemasters/gamemasters.html">Gamemasters</a></li>
-          <li><a href="../../rules/rules.html">Rules</a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
+  <!-- NOTE: vertical menu -->
+  <ul class="vertical menu" data-accordion-menu>
+    <li><a href="../../players.html">Players</a>
+      <ul class="menu vertical nested" style="font-weight: 300">
+        <li><a href="../../players/charactercreation/index.php">Character Creation</a></li>
+        <li><a href="../../players/feats/index.php">Feats</a></li>
+        <li><a href="../../players/gear/index.php">Gear</a></li>
+        <li><a href="../../players/objects/index.php">Objects</a></li>
+        <li><a href="../../players/skillfeats/index.php">Skill Feats</a></li>
+        <li><a href="../../players/spelleffects/index.php">Spell Effects</a></li>
+       </ul>
+    </li>
+    <li><a href="../gamemasters/gamemasters.html">Gamemasters</a>
+      <ul class="menu vertical nested"style="font-weight: 300">
+        <li><a href="../balancingencounters/index.php">Balancing Encounters</a></li>
+        <li><a href="../beastcreation/index.php">Beast Creation</a></li>
+        <li><a href="../beastiary/index.php">Beastiary</a></li>
+        <li><a href="../factions/index.php">Factions</a></li>
+        <li><a href="../runningcampaign/index.php">Running a Campaign</a></li>
+       </ul>
+     </li>
+    <li><a href="../rules/rules.html">Rules</a>
+      <ul class="menu vertical nested" style="font-weight: 300">
+        <li><a href="../../rules/general/index.php">General</a></li>
+        <li><a href="../../rules/combat/index.php">Combat</a></li>
+        <li><a href="../../rules/incapacitation/index.php">Incapacitation</a></li>
+        <li><a href="../../rules/skills/index.php">Skills</a></li>
+        <li><a href="../../rules/spells/index.php">Spells</a></li>
+        <li><a href="../../rules/vehicles/index.php">Vehicles</a></li>
+       </ul>
+    </li>
+   </ul>
+  <ul class="vertical menu">
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  <ul class="menu simple social-links">
+    <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+  </ul>
 </div>
 
+<!-- NOTE: bar content -->
 
-<!-- NOTE: HEADER -->
+<div class="off-canvas-content" data-off-canvas-content>
+  <div class="nav-bar">
+      <div class="nav-bar-left">
+        <a href="../../index.html"class="nav-bar-logo"><img class="logo" src=../../fragmentsseal.png width="40px" height="40px"></a>
       </div>
 
-      <div class="holy-grail-left" style="background-color: #ededed">
-        <h3>Gamemasters</h3
+  <!-- NOTE: nav bar right -->
+
+      <div class="nav-bar-right">
+        <ul class="menu">
+          <li class="hide-for-small-only"><a href="../../players/players.html">Players</a></li>
+          <li class="hide-for-small-only"><a href="../../rules/rules.html">Rules</a></li>
+<!-- NOTE: search -->
+
+        <ul class="menu search">
+          <li><input type="search" placeholder=""></li>
+          <li><button type="button" class="button" style="background-color: #3c5178;">Search</button></li>
+        </ul>
+<!-- NOTE: end search -->
+          <li>
+            <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </button>
+          </li>
+        </ul>
+    </div>
+
+  </div>
+ </div>
+
+ <!-- NOTE: bar content -->
+
+<!-- NOTE: HEADER -->
+  <div class="holy-grail-grid">
+
+      <div class="holy-grail-left">
+        <h3>Gamemasters</h3>
         <ul>
-          <li><a href="../overview/index.html">Overview</a></li>
-          <li><a href="../balancingencounters/index.html">Balancing Encounters</a></li>
-          <li><a href="../beastcreation/index.html">Beast Creation</a></li>
-          <li><a href="../bestiary/index.html">Bestiary</a></li>
-          <li><a href="../factions/index.html">Factions</a></li>
           <li><a href="../runningcampaign/index.html">Running a Campaign</a></li>
+          <li><a href="../balancingencounters/index.html">Balaning Encounters</a></li>
+          <li><a href="../factions/index.html">Factions</a></li>
+          <li><a href="../beastcreation/index.html">Beast Creation</a></li>
+          <li><a href="../beastiary/index.html">Beastiary</a></li>
         </ul>
       </div>
 
       <div class="holy-grail-middle">
         <h3>Factions</h3>
-        <p>Insert factions here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
       </div>
-
-      <div class="holy-grail-footer">
-      </div>
-
-    </div>
+  </div>
 
 <!-- NOTE: FOOTER -->
 <footer></footer>
